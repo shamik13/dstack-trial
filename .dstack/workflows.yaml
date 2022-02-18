@@ -1,0 +1,8 @@
+workflows:
+  - name: hello
+    image: tensorflow/tensorflow:latest-gpu
+    commands:
+      - python3 main.py
+    resources:
+      memory: 8GB
+      gpu: 1
